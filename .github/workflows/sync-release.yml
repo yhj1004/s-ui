@@ -2,23 +2,23 @@ name: Sync Upstream Release
 
 on:
   schedule:
-    # 每天 UTC 时间 0点和12点 自动检查一次原项目（即北京时间 8点和20点）
+    # 每天 UTC 时间 0点和12点 自动检查一次原项目（北京时间 8点和20点）
     - cron: '0 0,12 * * *'
-  workflow_dispatch: # 支持你在网页上手动点击按钮立即触发同步
+  workflow_dispatch: # 支持手动点击立即触发
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 赋予在当前仓库创建 Release 的写入权限
+      contents: write
 
     steps:
       - name: Check and Sync Upstream Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 1. 获取原作者最新 Release 的 Tag 名称
-          UPSTREAM_TAG=$(curl -sL https://api.github.com/repos/alireza0/s-ui/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          # 1. 使用带有 Token 的 gh 命令获取原作者最新 Tag，避免 API 速率限制
+          UPSTREAM_TAG=$(gh release view --repo alireza0/s-ui --json tagName --jq .tagName)
           echo "Upstream latest tag: $UPSTREAM_TAG"
 
           if [ -z "$UPSTREAM_TAG" ]; then
@@ -27,19 +27,18 @@ jobs:
           fi
 
           # 2. 检查自己仓库是否已经存在该 Tag
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.github.com/repos/yhj1004/s-ui/releases/tags/$UPSTREAM_TAG)
-
-          if [ "$HTTP_STATUS" == "200" ]; then
+          if gh release view "$UPSTREAM_TAG" --repo yhj1004/s-ui >/dev/null 2>&1; then
             echo "Already up-to-date with tag $UPSTREAM_TAG"
             exit 0
           fi
 
-          # 3. 下载原作者的两个核心架构安装包
+          # 3. 使用 gh release download 下载原作者的两个安装包
           echo "New release found: $UPSTREAM_TAG. Downloading assets..."
-          wget -q https://github.com/alireza0/s-ui/releases/download/${UPSTREAM_TAG}/s-ui-linux-amd64.tar.gz
-          wget -q https://github.com/alireza0/s-ui/releases/download/${UPSTREAM_TAG}/s-ui-linux-arm64.tar.gz
+          gh release download "$UPSTREAM_TAG" --repo alireza0/s-ui \
+            --pattern "s-ui-linux-amd64.tar.gz" \
+            --pattern "s-ui-linux-arm64.tar.gz"
 
-          # 4. 自动在你的仓库创建 Release 并上传下载好的安装包
+          # 4. 发布到当前仓库
           echo "Publishing to current repository..."
           gh release create "$UPSTREAM_TAG" s-ui-linux-amd64.tar.gz s-ui-linux-arm64.tar.gz \
             --repo yhj1004/s-ui \
