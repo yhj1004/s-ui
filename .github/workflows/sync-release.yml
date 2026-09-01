@@ -1,0 +1,47 @@
+name: Sync Upstream Release
+
+on:
+  schedule:
+    # 每天 UTC 时间 0点和12点 自动检查一次原项目（即北京时间 8点和20点）
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # 支持你在网页上手动点击按钮立即触发同步
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 赋予在当前仓库创建 Release 的写入权限
+
+    steps:
+      - name: Check and Sync Upstream Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 1. 获取原作者最新 Release 的 Tag 名称
+          UPSTREAM_TAG=$(curl -sL https://api.github.com/repos/alireza0/s-ui/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          echo "Upstream latest tag: $UPSTREAM_TAG"
+
+          if [ -z "$UPSTREAM_TAG" ]; then
+            echo "Failed to get upstream tag"
+            exit 1
+          fi
+
+          # 2. 检查自己仓库是否已经存在该 Tag
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.github.com/repos/yhj1004/s-ui/releases/tags/$UPSTREAM_TAG)
+
+          if [ "$HTTP_STATUS" == "200" ]; then
+            echo "Already up-to-date with tag $UPSTREAM_TAG"
+            exit 0
+          fi
+
+          # 3. 下载原作者的两个核心架构安装包
+          echo "New release found: $UPSTREAM_TAG. Downloading assets..."
+          wget -q https://github.com/alireza0/s-ui/releases/download/${UPSTREAM_TAG}/s-ui-linux-amd64.tar.gz
+          wget -q https://github.com/alireza0/s-ui/releases/download/${UPSTREAM_TAG}/s-ui-linux-arm64.tar.gz
+
+          # 4. 自动在你的仓库创建 Release 并上传下载好的安装包
+          echo "Publishing to current repository..."
+          gh release create "$UPSTREAM_TAG" s-ui-linux-amd64.tar.gz s-ui-linux-arm64.tar.gz \
+            --repo yhj1004/s-ui \
+            --title "$UPSTREAM_TAG" \
+            --notes "Auto-synced from alireza0/s-ui $UPSTREAM_TAG"
