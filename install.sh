@@ -181,39 +181,39 @@ d vi install_finished "cài đặt hoàn tất, hiện đang chạy..."
 d vi access_panel "Bạn có thể truy cập bảng điều khiển qua (các) URL sau:"
 d vi executing "Đang thực thi..."
 
-d zhcn root_err "请使用 root 权限运行此脚本"
-d zhcn os_fail "无法检测系统操作系统，请联系作者！"
-d zhcn os_release "操作系统版本："
-d zhcn unsupported_arch "不支持的 CPU 架构！"
-d zhcn installing_base "正在安装所需软件包..."
-d zhcn migrating "正在迁移..."
-d zhcn finished_modify "安装/更新完成！为了安全，建议修改面板设置"
-d zhcn ask_modify "是否继续修改设置 [y/n]？ "
-d zhcn enter_port "请输入面板端口（留空则使用现有/默认值）："
-d zhcn enter_path "请输入面板路径（留空则使用现有/默认值）："
-d zhcn enter_subport "请输入订阅端口（留空则使用现有/默认值）："
-d zhcn enter_subpath "请输入订阅路径（留空则使用现有/默认值）："
-d zhcn initializing "正在初始化，请稍候..."
-d zhcn ask_admin "是否修改管理员账号密码 [y/n]？ "
-d zhcn set_user "请设置您的用户名： "
-d zhcn set_pass "请设置您的密码： "
-d zhcn current_creds "您当前的管理员登录信息："
-d zhcn cancelled "已取消..."
-d zhcn fresh_random "这是全新安装，为了安全将生成随机登录信息："
-d zhcn forgot_info "如果忘记登录信息，可以输入 s-ui 打开配置菜单"
-d zhcn upgrade_keep "这是升级，将保留旧设置。如果忘记登录信息，可以输入 s-ui 打开配置菜单"
-d zhcn stopping_singbox "正在停止 sing-box 服务..."
-d zhcn bin_exists "目录仍然存在！请检查内容并在迁移后手动删除"
-d zhcn got_version "已获取 s-ui 最新版本：%s，开始安装..."
-d zhcn fetch_fail "获取 s-ui 版本失败，可能是由于 Github API 限制，请稍后再试"
-d zhcn download_fail "下载 s-ui 失败，请确保您的服务器可以访问 Github"
-d zhcn begin_install "开始安装 s-ui v%s"
-d zhcn download_ver_fail "下载 s-ui v%s 失败，请检查该版本是否存在"
-d zhcn extract_fail "解压 s-ui 失败，压缩包可能已损坏或磁盘空间不足"
-d zhcn broken_bin "已安装的 s-ui 程序无法运行，安装不完整"
-d zhcn install_finished "安装完成，现已运行..."
-d zhcn access_panel "您可以通过以下 URL 访问面板："
-d zhcn executing "正在执行..."
+d zhcn root_err "请使用 root 权限运行此脚本"[cite: 1]
+d zhcn os_fail "无法检测系统操作系统，请联系作者！"[cite: 1]
+d zhcn os_release "操作系统版本："[cite: 1]
+d zhcn unsupported_arch "不支持的 CPU 架构！"[cite: 1]
+d zhcn installing_base "正在安装所需软件包..."[cite: 1]
+d zhcn migrating "正在迁移..."[cite: 1]
+d zhcn finished_modify "安装/更新完成！为了安全，建议修改面板设置"[cite: 1]
+d zhcn ask_modify "是否继续修改设置 [y/n]？ "[cite: 1]
+d zhcn enter_port "请输入面板端口（留空则使用现有/默认值）："[cite: 1]
+d zhcn enter_path "请输入面板路径（留空则使用现有/默认值）："[cite: 1]
+d zhcn enter_subport "请输入订阅端口（留空则使用现有/默认值）："[cite: 1]
+d zhcn enter_subpath "请输入订阅路径（留空则使用现有/默认值）："[cite: 1]
+d zhcn initializing "正在初始化，请稍候..."[cite: 1]
+d zhcn ask_admin "是否修改管理员账号密码 [y/n]？ "[cite: 1]
+d zhcn set_user "请设置您的用户名： "[cite: 1]
+d zhcn set_pass "请设置您的密码： "[cite: 1]
+d zhcn current_creds "您当前的管理员登录信息："[cite: 1]
+d zhcn cancelled "已取消..."[cite: 1]
+d zhcn fresh_random "这是全新安装，为了安全将生成随机登录信息："[cite: 1]
+d zhcn forgot_info "如果忘记登录信息，可以输入 s-ui 打开配置菜单"[cite: 1]
+d zhcn upgrade_keep "这是升级，将保留旧设置。如果忘记登录信息，可以输入 s-ui 打开配置菜单"[cite: 1]
+d zhcn stopping_singbox "正在停止 sing-box 服务..."[cite: 1]
+d zhcn bin_exists "目录仍然存在！请检查内容并在迁移后手动删除"[cite: 1]
+d zhcn got_version "已获取 s-ui 最新版本：%s，开始安装..."[cite: 1]
+d zhcn fetch_fail "获取 s-ui 版本失败，可能是由于 Github API 限制，请稍后再试"[cite: 1]
+d zhcn download_fail "下载 s-ui 失败，请确保您的服务器可以访问 Github"[cite: 1]
+d zhcn begin_install "开始安装 s-ui v%s"[cite: 1]
+d zhcn download_ver_fail "下载 s-ui v%s 失败，请检查该版本是否存在"[cite: 1]
+d zhcn extract_fail "解压 s-ui 失败，压缩包可能已损坏或磁盘空间不足"[cite: 1]
+d zhcn broken_bin "已安装的 s-ui 程序无法运行，安装不完整"[cite: 1]
+d zhcn install_finished "安装完成，现已运行..."[cite: 1]
+d zhcn access_panel "您可以通过以下 URL 访问面板："[cite: 1]
+d zhcn executing "正在执行..."[cite: 1]
 
 d zhtw root_err "請使用 root 權限執行此腳本"
 d zhtw os_fail "無法偵測系統作業系統，請聯絡作者！"
@@ -261,30 +261,30 @@ t() {
 }
 
 # check root
-[[ $EUID -ne 0 ]] && echo -e "${red}$(t root_err)${plain}\n" && exit 1
+[[ $EUID -ne 0 ]] && echo -e "${red}$(t root_err)${plain}\n" && exit 1[cite: 1]
 
 # Check OS and set release variable
 if [[ -f /etc/os-release ]]; then
-    source /etc/os-release
-    release=$ID
+    source /etc/os-release[cite: 1]
+    release=$ID[cite: 1]
 elif [[ -f /usr/lib/os-release ]]; then
-    source /usr/lib/os-release
-    release=$ID
+    source /usr/lib/os-release[cite: 1]
+    release=$ID[cite: 1]
 else
-    echo -e "${red}$(t os_fail)${plain}" >&2
-    exit 1
+    echo -e "${red}$(t os_fail)${plain}" >&2[cite: 1]
+    exit 1[cite: 1]
 fi
-echo -e "$(t os_release) $release"
+echo -e "$(t os_release) $release"[cite: 1]
 
 # Detect the init system (systemd vs OpenRC used by Alpine)
-if [[ "$release" == "alpine" ]]; then
-    init_system="openrc"
-elif command -v systemctl >/dev/null 2>&1 && [[ -d /run/systemd/system ]]; then
-    init_system="systemd"
-elif command -v rc-service >/dev/null 2>&1; then
-    init_system="openrc"
+if [[ "$release" == "alpine" ]]; then[cite: 1]
+    init_system="openrc"[cite: 1]
+elif command -v systemctl >/dev/null 2>&1 && [[ -d /run/systemd/system ]]; then[cite: 1]
+    init_system="systemd"[cite: 1]
+elif command -v rc-service >/dev/null 2>&1; then[cite: 1]
+    init_system="openrc"[cite: 1]
 else
-    init_system="systemd"
+    init_system="systemd"[cite: 1]
 fi
 
 arch() {
@@ -300,7 +300,7 @@ arch() {
     esac
 }
 
-echo "arch: $(arch)"
+echo "arch: $(arch)"[cite: 1]
 
 install_base() {
     echo -e "${yellow}$(t installing_base)${plain}"
@@ -352,161 +352,161 @@ EOF
 }
 
 config_after_install() {
-    echo -e "${yellow}$(t migrating)${plain}"
-    /usr/local/s-ui/sui migrate
+    echo -e "${yellow}$(t migrating)${plain}"[cite: 1]
+    /usr/local/s-ui/sui migrate[cite: 1]
 
-    echo -e "${yellow}$(t finished_modify)${plain}"
-    read -p "$(t ask_modify)" config_confirm
-    if [[ "${config_confirm}" == "y" || "${config_confirm}" == "Y" ]]; then
-        echo -e "${yellow}$(t enter_port)${plain}"
-        read config_port
-        echo -e "${yellow}$(t enter_path)${plain}"
-        read config_path
+    echo -e "${yellow}$(t finished_modify)${plain}"[cite: 1]
+    read -p "$(t ask_modify)" config_confirm[cite: 1]
+    if [[ "${config_confirm}" == "y" || "${config_confirm}" == "Y" ]]; then[cite: 1]
+        echo -e "${yellow}$(t enter_port)${plain}"[cite: 1]
+        read config_port[cite: 1]
+        echo -e "${yellow}$(t enter_path)${plain}"[cite: 1]
+        read config_path[cite: 1]
 
         # Sub configuration
-        echo -e "${yellow}$(t enter_subport)${plain}"
-        read config_subPort
-        echo -e "${yellow}$(t enter_subpath)${plain}"
-        read config_subPath
+        echo -e "${yellow}$(t enter_subport)${plain}"[cite: 1]
+        read config_subPort[cite: 1]
+        echo -e "${yellow}$(t enter_subpath)${plain}"[cite: 1]
+        read config_subPath[cite: 1]
 
         # Set configs
-        echo -e "${yellow}$(t initializing)${plain}"
-        params=""
-        [ -z "$config_port" ] || params="$params -port $config_port"
-        [ -z "$config_path" ] || params="$params -path $config_path"
-        [ -z "$config_subPort" ] || params="$params -subPort $config_subPort"
-        [ -z "$config_subPath" ] || params="$params -subPath $config_subPath"
-        /usr/local/s-ui/sui setting ${params}
+        echo -e "${yellow}$(t initializing)${plain}"[cite: 1]
+        params=""[cite: 1]
+        [ -z "$config_port" ] || params="$params -port $config_port"[cite: 1]
+        [ -z "$config_path" ] || params="$params -path $config_path"[cite: 1]
+        [ -z "$config_subPort" ] || params="$params -subPort $config_subPort"[cite: 1]
+        [ -z "$config_subPath" ] || params="$params -subPath $config_subPath"[cite: 1]
+        /usr/local/s-ui/sui setting ${params}[cite: 1]
 
-        read -p "$(t ask_admin)" admin_confirm
-        if [[ "${admin_confirm}" == "y" || "${admin_confirm}" == "Y" ]]; then
+        read -p "$(t ask_admin)" admin_confirm[cite: 1]
+        if [[ "${admin_confirm}" == "y" || "${admin_confirm}" == "Y" ]]; then[cite: 1]
             # First admin credentials
-            read -p "$(t set_user)" config_account
-            read -p "$(t set_pass)" config_password
+            read -p "$(t set_user)" config_account[cite: 1]
+            read -p "$(t set_pass)" config_password[cite: 1]
 
             # Set credentials
-            echo -e "${yellow}$(t initializing)${plain}"
-            /usr/local/s-ui/sui admin -username ${config_account} -password ${config_password}
+            echo -e "${yellow}$(t initializing)${plain}"[cite: 1]
+            /usr/local/s-ui/sui admin -username ${config_account} -password ${config_password}[cite: 1]
         else
-            echo -e "${yellow}$(t current_creds)${plain}"
-            /usr/local/s-ui/sui admin -show
+            echo -e "${yellow}$(t current_creds)${plain}"[cite: 1]
+            /usr/local/s-ui/sui admin -show[cite: 1]
         fi
     else
-        echo -e "${red}$(t cancelled)${plain}"
-        if [[ ! -f "/usr/local/s-ui/db/s-ui.db" ]]; then
-            local usernameTemp=$(head -c 6 /dev/urandom | base64)
-            local passwordTemp=$(head -c 6 /dev/urandom | base64)
-            echo -e "$(t fresh_random)"
-            echo -e "###############################################"
-            echo -e "${green}username:${usernameTemp}${plain}"
-            echo -e "${green}password:${passwordTemp}${plain}"
-            echo -e "###############################################"
-            echo -e "${red}$(t forgot_info)${plain}"
-            /usr/local/s-ui/sui admin -username ${usernameTemp} -password ${passwordTemp}
+        echo -e "${red}$(t cancelled)${plain}"[cite: 1]
+        if [[ ! -f "/usr/local/s-ui/db/s-ui.db" ]]; then[cite: 1]
+            local usernameTemp=$(head -c 6 /dev/urandom | base64)[cite: 1]
+            local passwordTemp=$(head -c 6 /dev/urandom | base64)[cite: 1]
+            echo -e "$(t fresh_random)"[cite: 1]
+            echo -e "###############################################"[cite: 1]
+            echo -e "${green}username:${usernameTemp}${plain}"[cite: 1]
+            echo -e "${green}password:${passwordTemp}${plain}"[cite: 1]
+            echo -e "###############################################"[cite: 1]
+            echo -e "${red}$(t forgot_info)${plain}"[cite: 1]
+            /usr/local/s-ui/sui admin -username ${usernameTemp} -password ${passwordTemp}[cite: 1]
         else
-            echo -e "${red}$(t upgrade_keep)${plain}"
+            echo -e "${red}$(t upgrade_keep)${plain}"[cite: 1]
         fi
     fi
 }
 
 prepare_services() {
-    if [[ "${init_system}" == "systemd" ]]; then
-        if [[ -f "/etc/systemd/system/sing-box.service" ]]; then
-            echo -e "${yellow}$(t stopping_singbox)${plain}"
-            systemctl stop sing-box
-            rm -f /usr/local/s-ui/bin/sing-box /usr/local/s-ui/bin/runSingbox.sh /usr/local/s-ui/bin/signal
+    if [[ "${init_system}" == "systemd" ]]; then[cite: 1]
+        if [[ -f "/etc/systemd/system/sing-box.service" ]]; then[cite: 1]
+            echo -e "${yellow}$(t stopping_singbox)${plain}"[cite: 1]
+            systemctl stop sing-box[cite: 1]
+            rm -f /usr/local/s-ui/bin/sing-box /usr/local/s-ui/bin/runSingbox.sh /usr/local/s-ui/bin/signal[cite: 1]
         fi
     fi
-    if [[ -e "/usr/local/s-ui/bin" ]]; then
-        echo -e "###############################################################"
-        echo -e "${green}/usr/local/s-ui/bin${red} $(t bin_exists)${plain}"
-        echo -e "###############################################################"
+    if [[ -e "/usr/local/s-ui/bin" ]]; then[cite: 1]
+        echo -e "###############################################################"[cite: 1]
+        echo -e "${green}/usr/local/s-ui/bin${red} $(t bin_exists)${plain}"[cite: 1]
+        echo -e "###############################################################"[cite: 1]
     fi
-    if [[ "${init_system}" == "systemd" ]]; then
-        systemctl daemon-reload
+    if [[ "${init_system}" == "systemd" ]]; then[cite: 1]
+        systemctl daemon-reload[cite: 1]
     fi
 }
 
 install_s-ui() {
-    cd /tmp/
+    cd /tmp/[cite: 1]
 
-    if [ $# == 0 ]; then
-        last_version=$(curl -Ls "https://api.github.com/repos/yhj1004/s-ui1.6.0/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
-        if [[ ! -n "$last_version" ]]; then
-            echo -e "${red}$(t fetch_fail)${plain}"
-            exit 1
+    if [ $# == 0 ]; then[cite: 1]
+        last_version=$(curl -Ls "https://api.github.com/repos/yhj1004/s-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        if [[ ! -n "$last_version" ]]; then[cite: 1]
+            echo -e "${red}$(t fetch_fail)${plain}"[cite: 1]
+            exit 1[cite: 1]
         fi
-        printf "${green}$(t got_version)${plain}\n" "${last_version}"
-        wget -N --no-check-certificate -O /tmp/s-ui-linux-$(arch).tar.gz https://github.com/yhj1004/s-ui1.6.0/releases/download/${last_version}/s-ui-linux-$(arch).tar.gz
-        if [[ $? -ne 0 ]]; then
-            echo -e "${red}$(t download_fail)${plain}"
-            exit 1
+        printf "${green}$(t got_version)${plain}\n" "${last_version}"[cite: 1]
+        wget -N --no-check-certificate -O /tmp/s-ui-linux-$(arch).tar.gz https://github.com/yhj1004/s-ui/releases/download/${last_version}/s-ui-linux-$(arch).tar.gz
+        if [[ $? -ne 0 ]]; then[cite: 1]
+            echo -e "${red}$(t download_fail)${plain}"[cite: 1]
+            exit 1[cite: 1]
         fi
     else
-        last_version=$1
-        url="https://github.com/yhj1004/s-ui1.6.0/releases/download/${last_version}/s-ui-linux-$(arch).tar.gz"
-        printf "$(t begin_install)\n" "$1"
-        wget -N --no-check-certificate -O /tmp/s-ui-linux-$(arch).tar.gz ${url}
-        if [[ $? -ne 0 ]]; then
-            printf "${red}$(t download_ver_fail)${plain}\n" "$1"
-            exit 1
+        last_version=$1[cite: 1]
+        url="https://github.com/yhj1004/s-ui/releases/download/${last_version}/s-ui-linux-$(arch).tar.gz"
+        printf "$(t begin_install)\n" "$1"[cite: 1]
+        wget -N --no-check-certificate -O /tmp/s-ui-linux-$(arch).tar.gz ${url}[cite: 1]
+        if [[ $? -ne 0 ]]; then[cite: 1]
+            printf "${red}$(t download_ver_fail)${plain}\n" "$1"[cite: 1]
+            exit 1[cite: 1]
         fi
     fi
 
-    if [[ -e /usr/local/s-ui/ ]]; then
-        if [[ "${init_system}" == "systemd" ]]; then
-            systemctl stop s-ui
-        elif [[ "${init_system}" == "openrc" ]]; then
-            rc-service s-ui stop 2>/dev/null
+    if [[ -e /usr/local/s-ui/ ]]; then[cite: 1]
+        if [[ "${init_system}" == "systemd" ]]; then[cite: 1]
+            systemctl stop s-ui[cite: 1]
+        elif [[ "${init_system}" == "openrc" ]]; then[cite: 1]
+            rc-service s-ui stop 2>/dev/null[cite: 1]
         fi
     fi
 
-    if ! tar zxvf s-ui-linux-$(arch).tar.gz; then
-        echo -e "${red}$(t extract_fail)${plain}"
-        df -h /tmp /usr/local 2>/dev/null
-        rm -rf s-ui s-ui-linux-$(arch).tar.gz
-        exit 1
+    if ! tar zxvf s-ui-linux-$(arch).tar.gz; then[cite: 1]
+        echo -e "${red}$(t extract_fail)${plain}"[cite: 1]
+        df -h /tmp /usr/local 2>/dev/null[cite: 1]
+        rm -rf s-ui s-ui-linux-$(arch).tar.gz[cite: 1]
+        exit 1[cite: 1]
     fi
-    rm s-ui-linux-$(arch).tar.gz -f
+    rm s-ui-linux-$(arch).tar.gz -f[cite: 1]
 
-    chmod +x s-ui/sui s-ui/s-ui.sh
-    cp s-ui/s-ui.sh /usr/bin/s-ui
-    if ! cp -rf s-ui /usr/local/; then
-        echo -e "${red}$(t extract_fail)${plain}"
-        df -h /usr/local 2>/dev/null
-        rm -rf s-ui
-        exit 1
+    chmod +x s-ui/sui s-ui/s-ui.sh[cite: 1]
+    cp s-ui/s-ui.sh /usr/bin/s-ui[cite: 1]
+    if ! cp -rf s-ui /usr/local/; then[cite: 1]
+        echo -e "${red}$(t extract_fail)${plain}"[cite: 1]
+        df -h /usr/local 2>/dev/null[cite: 1]
+        rm -rf s-ui[cite: 1]
+        exit 1[cite: 1]
     fi
-    if ! /usr/local/s-ui/sui -v >/dev/null 2>&1; then
-        echo -e "${red}$(t broken_bin)${plain}"
-        df -h /usr/local 2>/dev/null
-        rm -rf s-ui
-        exit 1
+    if ! /usr/local/s-ui/sui -v >/dev/null 2>&1; then[cite: 1]
+        echo -e "${red}$(t broken_bin)${plain}"[cite: 1]
+        df -h /usr/local 2>/dev/null[cite: 1]
+        rm -rf s-ui[cite: 1]
+        exit 1[cite: 1]
     fi
-    if [[ "${init_system}" == "systemd" ]]; then
-        cp -f s-ui/*.service /etc/systemd/system/
+    if [[ "${init_system}" == "systemd" ]]; then[cite: 1]
+        cp -f s-ui/*.service /etc/systemd/system/[cite: 1]
     fi
-    rm -rf s-ui
+    rm -rf s-ui[cite: 1]
 
-    config_after_install
-    prepare_services
+    config_after_install[cite: 1]
+    prepare_services[cite: 1]
 
-    if [[ "${init_system}" == "openrc" ]]; then
-        install_openrc_service
-        rc-update add s-ui default
-        rc-service s-ui restart
+    if [[ "${init_system}" == "openrc" ]]; then[cite: 1]
+        install_openrc_service[cite: 1]
+        rc-update add s-ui default[cite: 1]
+        rc-service s-ui restart[cite: 1]
     else
-        systemctl enable s-ui --now
+        systemctl enable s-ui --now[cite: 1]
     fi
 
-    printf "${green}s-ui v${last_version}${plain} $(t install_finished)\n"
-    echo -e "$(t access_panel)${green}"
-    /usr/local/s-ui/sui uri
-    echo -e "${plain}"
-    echo -e ""
-    s-ui help
+    printf "${green}s-ui v${last_version}${plain} $(t install_finished)\n"[cite: 1]
+    echo -e "$(t access_panel)${green}"[cite: 1]
+    /usr/local/s-ui/sui uri[cite: 1]
+    echo -e "${plain}"[cite: 1]
+    echo -e ""[cite: 1]
+    s-ui help[cite: 1]
 }
 
-echo -e "${green}$(t executing)${plain}"
-install_base
-install_s-ui $1
+echo -e "${green}$(t executing)${plain}"[cite: 1]
+install_base[cite: 1]
+install_s-ui $1[cite: 1]
